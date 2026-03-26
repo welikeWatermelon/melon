@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-pretendard: "Pretendard", system-ui, -apple-system, sans-serif;
+
+  --color-primary-50: #FFF5F2;
+  --color-primary-100: #FFE8E0;
+  --color-primary-200: #FFD0C1;
+  --color-primary-300: #FFB09A;
+  --color-primary-400: #F4845F;
+  --color-primary-500: #E8714A;
+  --color-primary-600: #D45A33;
+  --color-primary-700: #B44425;
+  --color-primary-800: #8E351E;
+  --color-primary-900: #6B2A1A;
+
+  --color-secondary-50: #F5F3FA;
+  --color-secondary-100: #EDE8F5;
+  --color-secondary-200: #D9D0EB;
+  --color-secondary-300: #BFB0DC;
+  --color-secondary-400: #9B8EC4;
+  --color-secondary-500: #7E6FAF;
+  --color-secondary-600: #665898;
+  --color-secondary-700: #52467A;
+  --color-secondary-800: #3E355D;
+  --color-secondary-900: #2C2641;
+
+  --color-sage-50: #F0F7F4;
+  --color-sage-100: #DCEEE6;
+  --color-sage-200: #B8DDD0;
+  --color-sage-300: #8EC8B3;
+  --color-sage-400: #7DB8A5;
+  --color-sage-500: #5FA08A;
+  --color-sage-600: #4A8471;
+  --color-sage-700: #3A6959;
+  --color-sage-800: #2E5247;
+  --color-sage-900: #243F37;
+
+  --color-warm-50: #FFFAF8;
+  --color-warm-100: #FFF3ED;
+  --color-warm-200: #FFE9DD;
+  --color-warm-300: #FFDAC7;
+  --color-warm-400: #FFC5A8;
+
+  --color-gray-50: #FAFAF9;
+  --color-gray-100: #F5F4F3;
+  --color-gray-200: #EBEAE8;
+  --color-gray-300: #D6D4D1;
+  --color-gray-400: #B0ADA8;
+  --color-gray-500: #8A8580;
+  --color-gray-600: #6B665F;
+  --color-gray-700: #4A4640;
+  --color-gray-800: #302D29;
+  --color-gray-900: #1C1A17;
+
+  --color-danger-50: #FEF2F2;
+  --color-danger-100: #FEE2E2;
+  --color-danger-400: #F87171;
+  --color-danger-500: #EF4444;
+  --color-danger-600: #DC2626;
+
+  --color-success-50: #F0FDF4;
+  --color-success-500: #22C55E;
+
+  --color-info-50: #EFF6FF;
+  --color-info-500: #3B82F6;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: var(--font-pretendard);
+    background-color: var(--color-warm-50);
+    color: var(--color-gray-700);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+}
